@@ -1,0 +1,22 @@
+name: Deploy PHP folder to cPanel
+
+on:
+  push:
+    branches: [ "main" ]   # change if you deploy from another branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Upload /PHP to cPanel (FTP)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.CPANEL_FTP_HOST }}
+          username: ${{ secrets.CPANEL_FTP_USER }}
+          password: ${{ secrets.CPANEL_FTP_PASS }}
+          local-dir: PHP/
+          server-dir: /public_html/Extra/Projects/Form-Hub/PHP/
+          dangerous-clean-slate: false
