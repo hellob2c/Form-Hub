@@ -1,6 +1,6 @@
 name: Deploy PHP folder to cPanel
 
-on:
+on: 
   push:
     branches: [ "main" ]   # change if you deploy from another branch
 
