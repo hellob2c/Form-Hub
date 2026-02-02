@@ -1,0 +1,68 @@
+{
+  "forms": [
+    {
+      "slug": "contact",
+      "title": "Contact Us",
+      "fields": [
+        {
+          "name": "name",
+          "label": "Full name",
+          "type": "text",
+          "required": true,
+          "placeholder": "Your name"
+        },
+        {
+          "name": "email",
+          "label": "Email",
+          "type": "email",
+          "required": true,
+          "placeholder": "you@example.com"
+        },
+        {
+          "name": "phone",
+          "label": "Phone",
+          "type": "text",
+          "required": false,
+          "placeholder": "+91 ..."
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "type": "textarea",
+          "required": true,
+          "placeholder": "How can we help?"
+        }
+      ],
+      "settings": {
+        "successMessage": "Thanks! We received your message.",
+        "rateLimitPerMinute": 10
+      },
+      "destinations": [
+        {
+          "type": "email",
+          "enabled": false,
+          "config": {
+            "to": "you@youragency.com",
+            "from": "no-reply@forms.yourdomain.com",
+            "subject": "[{{client}}] New contact form submission"
+          }
+        },
+        {
+          "type": "google_sheets",
+          "enabled": false,
+          "config": {
+            "spreadsheetId": "YOUR_SPREADSHEET_ID",
+            "sheetName": "Leads"
+          }
+        },
+        {
+          "type": "mysql",
+          "enabled": false,
+          "config": {
+            "table": "contact_submissions"
+          }
+        }
+      ]
+    }
+  ]
+}
