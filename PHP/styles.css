@@ -1,0 +1,140 @@
+:root {
+    --primary-red: #D50000;
+    --primary-red-hover: #b70000;
+    --text-dark: #0b1a33;
+    --text-grey: #666;
+    --input-border: #dcdcdc;
+    --pill-bg: #ffebee;
+    --pill-text: #d32f2f;
+    --green-dot: #00c853;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+
+.form-title h2 {
+    margin: 0 0 8px 0;
+    color: var(--text-dark);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.form-title p {
+    margin: 0;
+    color: var(--text-grey);
+    font-size: 14px;
+}
+
+.availability-badge {
+    background-color: var(--pill-bg);
+    color: var(--pill-text);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--green-dot);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.col {
+    flex: 1;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #2196F3;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--primary-red);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-red-hover);
+}
+
+.disclaimer {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #888;
+    text-align: left;
+}
+
+@media (max-width: 480px) {
+    .row {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .form-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

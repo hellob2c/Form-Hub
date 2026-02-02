@@ -1,0 +1,48 @@
+Date: 2026-02-02 10:55:52
+To: mkcmukesh@gmail.com
+Subject: New Consultation Request from Mukesh Kashyap
+Headers: From: no-reply@example.com
+Reply-To: mkcmukesh@gmail.com
+
+Body: 
+You have received a new inquiry.
+
+Name: Mukesh Kashyap
+Phone: 07752969205
+Email: mkcmukesh@gmail.com
+Service: Property Selling
+
+--------------------------------------------------
+
+Date: 2026-02-02 11:02:31
+To: mkcmukesh@gmail.com
+Subject: New Consultation Request from Mukesh Kashyap
+Headers: From: no-reply@example.com
+Reply-To: mkcmukesh@gmail.com
+
+Body: 
+You have received a new inquiry.
+
+Name: Mukesh Kashyap
+Phone: 07752969205
+Email: mkcmukesh@gmail.com
+Service: Property Selling
+
+--------------------------------------------------
+
+Date: 2026-02-02 11:15:01
+To: mkcmukesh@gmail.com
+Subject: New Consultation Request from Mukesh Kashyap
+Headers: From: no-reply@example.com
+Reply-To: hellob2cindia@gmail.com
+
+Body: 
+You have received a new inquiry.
+
+Name: Mukesh Kashyap
+Phone: 07752969205
+Email: hellob2cindia@gmail.com
+Service: Renting
+
+--------------------------------------------------
+

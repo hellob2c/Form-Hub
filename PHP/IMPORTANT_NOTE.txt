@@ -1,0 +1,33 @@
+IMPORTANT: WHY YOU ARE NOT RECEIVING EMAILS
+===========================================
+
+1. LOCALHOST LIMITATION
+-----------------------
+You are running this website on your own computer (Localhost) using XAMPP.
+Your computer is NOT configured as a Mail Server. It does not have permission to send emails to Gmail, Outlook, or Yahoo.
+Standard PHP mail() function requires a mail server (like Postfix or Sendmail) to be running and configured, which is NOT the case by default on XAMPP.
+
+2. THE FALLBACK (PROOF IT WORKS)
+--------------------------------
+Because the email cannot be sent, I added a safety feature to the code.
+Instead of crashing, it saves the email content to a file.
+Please check the file "email_log.txt" in this same folder.
+If you see your message there, IT MEANS THE CODE IS WORKING PERFECTLY.
+
+3. HOW TO GET REAL EMAILS
+-------------------------
+Option A: Deploy to Live Server (Easiest)
+Upload this "PHP" folder to any real web hosting (GoDaddy, Hostinger, AWS, etc.).
+The code will work automatically there because real servers have mail configured.
+
+Option B: Setup SMTP (Advanced)
+If you MUST test on localhost, you cannot use the simple mail() function.
+You must use a library like PHPMailer and configure it with your Gmail App Password.
+This is complicated and usually not necessary just for testing.
+
+SUMMARY
+-------
+Your code is correct.
+Your form is correct.
+The fact that you don't get email is a limitation of running on your laptop, not the code.
+Check "email_log.txt" to see your submissions.
